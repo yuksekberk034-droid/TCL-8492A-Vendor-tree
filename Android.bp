@@ -9967,55 +9967,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libminiui",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libminiui.so",
-            ],
-            shared_libs: [
-                "libpixelflinger",
-                "libpng",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libdrm",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libminiui.so",
-            ],
-            shared_libs: [
-                "libpixelflinger",
-                "libpng",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libdrm",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmml",
     owner: "tcl",
     strip: {
