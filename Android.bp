@@ -13611,54 +13611,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libclearkeycasplugin",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mediacas/libclearkeycasplugin.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-full-3.9.1",
-                "libutils",
-                "liblog",
-                "libcrypto",
-                "libstagefright_foundation",
-                "libprotobuf-cpp-lite-3.9.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-full-3.9.1",
-                "libutils",
-                "liblog",
-                "libcrypto",
-                "libstagefright_foundation",
-                "libprotobuf-cpp-lite-3.9.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mediacas",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdrmclearkeyplugin",
     owner: "tcl",
     strip: {
