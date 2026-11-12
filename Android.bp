@@ -21354,7 +21354,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtkradioex@3.0_system_ext",
-    stem: "vendor.mediatek.hardware.mtkradioex@3.0"
+    stem: "vendor.mediatek.hardware.mtkradioex@3.0",
     owner: "tcl",
     strip: {
         none: true,
