@@ -22231,61 +22231,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "factory",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/factory",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libnvram",
-                "libfile_op",
-                "libminiui",
-                "libjpeg",
-                "libbase",
-                "libfft_vendor",
-                "libaudio_param_parser-vnd",
-                "libselinux",
-                "libalsautils",
-                "libhardware_legacy",
-                "libhardware",
-                "libaudioutils",
-                "libtinyalsa",
-                "libtinycompress",
-                "libaudiotoolkit_vendor",
-                "libmedia_helper",
-                "libladder",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "libhwm",
-                "liblog",
-                "libutils",
-                "android.system.suspend@1.0",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "android.hardware.health@2.0",
-                "android.hardware.light-V1-ndk_platform",
-                "libbinder_ndk",
-                "libbinder",
-                "android.hardware.light@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "fpsgo",
     owner: "tcl",
     target: {
