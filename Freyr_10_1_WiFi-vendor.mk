@@ -917,6 +917,7 @@ PRODUCT_PACKAGES += \
     libmtktinyxml \
     libmtkutils \
     libpl \
+    libprotobuf-cpp-lite-3.9.1 \
     libratconfig \
     libremosaic_wrapper \
     libremosaiclib \
