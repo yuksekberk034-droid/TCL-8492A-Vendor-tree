@@ -1004,7 +1004,6 @@ PRODUCT_PACKAGES += \
     doeapp-sat \
     dtc_vendor \
     dumpsys \
-    factory \
     fpsgo \
     fuelgauged \
     fuelgauged_nvram \
