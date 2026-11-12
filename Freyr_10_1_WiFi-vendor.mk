@@ -825,7 +825,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.mt6761 \
     sensors.mt6761 \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
-    libacdk \
     libbinderdebug \
     libcam.chdr \
     libcam.feature_utils \
