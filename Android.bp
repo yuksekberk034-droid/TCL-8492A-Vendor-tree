@@ -24485,3 +24485,23 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-lite-3.9.1",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
