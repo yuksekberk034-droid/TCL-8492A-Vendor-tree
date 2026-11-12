@@ -21586,35 +21586,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "applypatch",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/applypatch",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcrypto",
-                "liblog",
-                "libz_stable",
-                "libziparchive",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "atcid",
     owner: "tcl",
     target: {
@@ -21694,56 +21665,6 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libbluetooth_hw_test",
                 "libbluetooth_relayer",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "boringssl_self_test32",
-    owner: "tcl",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/boringssl_self_test32",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "boringssl_self_test64",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/boringssl_self_test64",
-            ],
-            shared_libs: [
-                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",
@@ -21906,31 +21827,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "dmabuf_dump",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dmabuf_dump",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "dmc_core",
     owner: "tcl",
     target: {
@@ -22023,35 +21919,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/dtc_vendor",
             ],
             shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "dumpsys",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dumpsys",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libbinderdebug",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -22209,32 +22076,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "hostapd_cli",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hostapd_cli",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.audio.service.mediatek",
     owner: "tcl",
     target: {
@@ -22316,38 +22157,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.boot@1.2-service",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.boot@1.2-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.boot@1.0",
-                "android.hardware.boot@1.1",
-                "android.hardware.boot@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.cas@1.2-service-lazy",
     owner: "tcl",
     target: {
@@ -22374,44 +22183,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.drm@1.4-service.clearkey",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.clearkey",
-            ],
-            shared_libs: [
-                "android.hardware.drm@1.0",
-                "android.hardware.drm@1.1",
-                "android.hardware.drm@1.2",
-                "android.hardware.drm@1.3",
-                "android.hardware.drm@1.4",
-                "libbase",
-                "libbinder",
-                "libcrypto",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -22540,38 +22311,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libsync",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.health@2.1-service",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.health@2.1-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.health@2.1",
-                "android.hardware.health@2.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -22990,43 +22729,6 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libmtkcam_grallocutils",
                 "vendor.mediatek.hardware.camera.atms@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "hostapd",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/hostapd",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libssl",
-                "libnl",
-                "android.hardware.wifi.hostapd@1.0",
-                "android.hardware.wifi.hostapd@1.1",
-                "android.hardware.wifi.hostapd@1.2",
-                "android.hardware.wifi.hostapd@1.3",
-                "libbase",
-                "libhidlbase",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
