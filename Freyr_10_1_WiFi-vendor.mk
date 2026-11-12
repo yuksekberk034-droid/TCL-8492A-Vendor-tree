@@ -740,7 +740,6 @@ PRODUCT_PACKAGES += \
     libvibrator \
     libvpu5 \
     libwapi \
-    libwpa_client \
     libwvhidl \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
@@ -982,40 +981,31 @@ PRODUCT_PACKAGES += \
     aee_aedv64 \
     aee_dumpstatev \
     aeev \
-    applypatch \
     atcid \
     audiocmdservice_atci \
     autobt \
-    boringssl_self_test32 \
-    boringssl_self_test64 \
     ccci_mdinit \
     ccci_rpcd \
     chipinfo \
     dconfig \
     dcxosetcap \
     dexecutor \
-    dmabuf_dump \
     dmc_core \
     doeapp-memtester \
     doeapp-sat \
     dtc_vendor \
-    dumpsys \
     fpsgo \
     fuelgauged \
     fuelgauged_nvram \
     getgameserver \
     gsm0710muxd \
-    hostapd_cli \
     android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
-    android.hardware.boot@1.2-service \
     android.hardware.cas@1.2-service-lazy \
-    android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.health@2.1-service \
     android.hardware.keymaster@4.1-service.trustkernel \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2@1.2-mediatek \
@@ -1027,7 +1017,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.wifi@1.0-service-lazy \
     camerahalserver \
-    hostapd \
     mtkfusionrild \
     tetheroffloadservice \
     vendor.mediatek.hardware.aee@1.1-service \
@@ -1037,7 +1026,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
-    wpa_supplicant \
     jpegtool \
     kph \
     loghidlvendorservice \
@@ -1068,4 +1056,3 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \
-    wpa_cli
