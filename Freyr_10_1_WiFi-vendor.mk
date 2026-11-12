@@ -476,15 +476,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
-    audio_common-aidl-cpp \
-    audioclient-types-aidl-cpp \
     libEGL_mtk \
     libGLES_meow \
     libGLESv1_CM_mtk \
     libGLESv2_mtk \
     libMEOW_qt \
     libMEOW_trace \
-    framework-permission-aidl-cpp \
     gc02m1_mipi_raw_IdxMgr \
     gc02m1_mipi_raw_tuning \
     gc02m1sub_mipi_raw_IdxMgr \
