@@ -23482,7 +23482,6 @@ cc_prebuilt_binary {
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
-                "android.hardware.power-service-mediatek",
                 "libbase",
                 "libbinder_ndk",
                 "android.hardware.power-V2-ndk_platform",
@@ -23495,6 +23494,7 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+check_elf_files: false,
     strip: {
         none: true,
     },
