@@ -21287,7 +21287,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mtkpower@1.0",
+                "vendor.mediatek.hardware.mtkpower@1.0_system_ext",
                 "libhidlbase",
                 "liblog",
                 "libutils",
