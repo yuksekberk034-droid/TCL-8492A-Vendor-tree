@@ -663,7 +663,6 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libkeystore-wifi-hidl \
     libladder \
-    libminiui \
     libmml \
     libmmprofile \
     libmnetlink_v104 \
