@@ -745,7 +745,6 @@ PRODUCT_PACKAGES += \
     libwapi \
     libwpa_client \
     libwvhidl \
-    libclearkeycasplugin \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
     libwvdrmengine \
