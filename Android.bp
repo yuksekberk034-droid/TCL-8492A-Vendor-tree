@@ -16914,32 +16914,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcppbor_external",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcppbor_external.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcppcose_rkp",
     owner: "tcl",
     strip: {
