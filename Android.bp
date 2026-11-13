@@ -11961,57 +11961,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsfplugin_ccodec_utils",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsfplugin_ccodec_utils.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsfplugin_ccodec_utils.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libshmemcompat",
     owner: "tcl",
     strip: {
