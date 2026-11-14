@@ -7,8 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/system/etc/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
-    vendor/tcl/Freyr_10_1_WiFi/proprietary/system/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    vendor/tcl/Freyr_10_1_WiFi/proprietary/system/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/system_ext/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_audio_policy_configuration.xml \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/system_ext/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_in_audio_policy_configuration.xml \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/system_ext/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration.xml \
@@ -185,7 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
-    vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/fstab.mt6761:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6761 \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/fstab.mt8766:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt8766 \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
@@ -265,7 +262,6 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
@@ -276,7 +272,6 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
-    vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     vendor/tcl/Freyr_10_1_WiFi/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
@@ -953,15 +948,9 @@ PRODUCT_PACKAGES += \
     NetworkStackInProcessResOverlay \
     NetworkStackResOverlay \
     TetheringResOverlay \
-    android.hardware.boot@1.2.xml \
-    android.hardware.cas@1.2-service-lazy.xml \
-    android.hardware.health@2.1.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
-    android.hardware.wifi.hostapd.xml \
     android.hardware.wifi.supplicant.xml \
-    android.hardware.wifi@1.0-service.xml \
     lights-mtk-default.xml \
-    manifest_android.hardware.drm@1.4-service.clearkey.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \

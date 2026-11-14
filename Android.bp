@@ -151,53 +151,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_bufferpool@2.0.1_system",
-    stem: "libstagefright_bufferpool@2.0.1",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libstagefright_wfd_mtk",
     owner: "tcl",
     strip: {
@@ -11602,7 +11555,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite",
                 "libutils",
                 "libc++",
                 "libc",
@@ -11627,7 +11580,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite",
                 "libutils",
                 "libc++",
                 "libc",
@@ -11657,7 +11610,7 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libhidlbase",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite",
                 "libstagefright_foundation",
                 "libutils",
                 "libc++",
@@ -11675,7 +11628,7 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libhidlbase",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite",
                 "libstagefright_foundation",
                 "libutils",
                 "libc++",
@@ -18817,33 +18770,6 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.boot@1.2.xml",
-    owner: "tcl",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.cas@1.2-service-lazy.xml",
-    owner: "tcl",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.health@2.1.xml",
-    owner: "tcl",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.usb@1.2-service-mediatekv2.xml",
     owner: "tcl",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml",
@@ -18853,36 +18779,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.wifi.hostapd.xml",
-    owner: "tcl",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.wifi@1.0-service.xml",
-    owner: "tcl",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "lights-mtk-default.xml",
     owner: "tcl",
     src: "proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_android.hardware.drm@1.4-service.clearkey.xml",
-    owner: "tcl",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -21286,27 +21185,6 @@ cc_prebuilt_binary {
     strip: {
         none: true,
     },
-    prefer: true,
-    soc_specific: true,
-}
-
-
-cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-lite-3.9.1",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so"],
-        },
-        android_arm64: {
-            srcs: ["proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so"],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
