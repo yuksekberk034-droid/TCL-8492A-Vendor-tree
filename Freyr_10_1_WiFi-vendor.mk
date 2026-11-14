@@ -949,13 +949,11 @@ PRODUCT_PACKAGES += \
     NetworkStackResOverlay \
     TetheringResOverlay \
     android.hardware.usb@1.2-service-mediatekv2.xml \
-    android.hardware.wifi.supplicant.xml \
     lights-mtk-default.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
     memtrack-mediatek.xml \
-    power-default.xml \
     manifest_dsds.xml \
     manifest_qsqs.xml \
     manifest_ss.xml \
